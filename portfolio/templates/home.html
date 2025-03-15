@@ -2,32 +2,135 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Videograph Template">
-    <meta name="keywords" content="Videograph, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | SR Portfolio</title>
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="description" content="Videograph Template">
+        <meta name="keywords" content="Videograph, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Home | SR Portfolio</title>
 
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="{% static 'https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap' %}" rel="stylesheet">
-    <link href="{% static 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap' %}"
-        rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css" type="text/css' %}">
-    <link rel="stylesheet" href="{% static 'css/elegant-icons.css" type="text/css' %}">
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css" type="text/css' %}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css" type="text/css' %}">
-    <link rel="stylesheet" href="{% static 'css/slicknav.min.css" type="text/css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css" type="text/css' %}">
-
-
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css" type="text/css' %}">
+        <link rel="stylesheet" href="{% static 'css/elegant-icons.css" type="text/css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css" type="text/css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css" type="text/css' %}">
+        <link rel="stylesheet" href="{% static 'css/slicknav.min.css" type="text/css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css" type="text/css' %}">
+    
     </head>
+    
     <body>
-        <h1> Succsess !</h1>
+        
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Header Section Begin -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="header__nav__option">
+                            <nav class="header__nav__menu mobile-menu">
+                                <ul>
+                                    <li class="active"><a href="{% static './index.html' %}">Home</a></li>
+                                    <li><a href="{% static './about.html' %}">About</a></li>
+                                    <li><a href="{% static './portfolio.html' %}">Portfolio</a></li>
+                                    <li><a href="{% static './services.html' %}">Services</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% static './about.html' %}">About</a></li>
+                                            <li><a href="{% static './portfolio.html' %}">Portfolio</a></li>
+                                            <li><a href="{% static './blog.html' %}">Blog</a></li>
+                                            <li><a href="{% static './blog-details.html' %}">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% static './contact.html' %}">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__nav__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero Section Begin -->
+        <section class="hero">
+            <div class="hero__slider owl-carousel">
+                <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="hero__text">
+                                    <span>For website and video editing</span>
+                                    <h2>Videographer’s Portfolio</h2>
+                                    <a href="#" class="primary-btn">See more about us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="hero__text">
+                                    <span>For website and video editing</span>
+                                    <h2>Videographer’s Portfolio</h2>
+                                    <a href="#" class="primary-btn">See more about us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="hero__text">
+                                    <span>For website and video editing</span>
+                                    <h2>Videographer’s Portfolio</h2>
+                                    <a href="#" class="primary-btn">See more about us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Js Plugins -->
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/mixitup.min.js' %}"></script>
+        <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+        <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
     </body>
 </html>
